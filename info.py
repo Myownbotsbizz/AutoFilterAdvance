@@ -14,7 +14,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '6125726'))
 API_HASH = environ.get('API_HASH', 'c2db15328ed3f991683ae71a82fca20e')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7189631809:AAHET_Ge6WGdDy6ty5ECp1OE3myScd42YhU")
+BOT_TOKEN = environ.get('BOT_TOKEN', "1980091820:AAFduhSM35uSfyW9P4y3ERcVBZ6-gZh_jyA")
 PORT = environ.get("PORT", "8080")
 
 # Bot settings
@@ -24,14 +24,14 @@ PICS = (environ.get('PICS', 'https://telegra.ph/file/55ab44111fad556d227b1.jpg h
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1013652420').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001571685216').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '--1001571685216 -1001233037463').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1013652420').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://amaru:amaru@cluster0.pkesznc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://leech:leech@cluster0.61ia8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
@@ -52,7 +52,7 @@ SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), False)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", """<b><code>{file_name}</code> \n\n🌟༺ ──•◈•─ ─•◈•──༻🌟
 ➧ പുതിയ സിനിമകൾ വേണോ? എന്നാൽ പെട്ടെന്ന് ഗ്രൂപ്പിൽ ജോയിൻ ആയിക്കോ
 
-🔊 Group: @MoviEsBizzCHAT
+🔊 Group: @MoviEsBizzCHAT1
  🔊 cнannel: @MoviEsBizzMalaYalaM_HD
 
 🎗️ʝσιи 🎗️ ѕнαяє🎗️ ѕυρρσят🎗️</b>""")
